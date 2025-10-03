@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------------------- */
+/* 1. Global Resets and Base Typography */
+/* ------------------------------------------------------------------------- */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fc;
+    height: 100%;
+}
+
+/* Base Input Styling (used in LoginForm and SignupForm) */
+.login-input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+.login-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* 2. Universal Button & Icon Styling */
+/* ------------------------------------------------------------------------- */
+
+.btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.2s ease;
+}
+
+.primary-btn {
+    background: #4f46e5; /* Primary purple */
+    color: white;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.primary-btn:hover {
+    background: #6366f1;
+}
+
+.icon-svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}

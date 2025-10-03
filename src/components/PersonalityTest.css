@@ -1,0 +1,94 @@
+/* PersonalityTest.css */
+.personality-test {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.question-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.options button {
+    margin: 5px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid #4f46e5;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 40px;
+}
+
+.options button.selected {
+    background: #4f46e5;
+    color: white;
+    transform: scale(1.05);
+}
+
+.options button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(79, 70, 229, 0.3);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    padding: 10px 25px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: #6366f1;
+}
+
+.progress-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    background: #4f46e5;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.error-message {
+    color: white;
+    background-color: #f87171;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.circle.active {
+  background-color: #4f46e5;
+}
+
+.label {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.line {
+  height: 4px;
+  width: 50px;
+  background-color: transparent;  /* no grey */
+  position: absolute;
+  top: 13px;
+  left: 40px;
+  z-index: 0;
+}
+
+.line.active {
+  background-color: #4f46e5;  /* purple line only for completed steps */
+}

@@ -1,0 +1,42 @@
+/* InternshipList.css */
+.internship-list {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.internship-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%; /* Default for small screens */
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.internship-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.internship-card h3 {
+    color: #4f46e5;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.internship-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}

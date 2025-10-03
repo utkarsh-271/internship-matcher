@@ -1,0 +1,12 @@
+/* Footer.css */
+.footer {
+    background-color: #4f46e5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: auto;
+    border: none;
+    flex-shrink: 0;
+}
+

@@ -1,0 +1,39 @@
+/* CVUpload.css */
+.cv-upload {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.upload-area {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.upload-area input[type="file"] {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.upload-btn {
+    padding: 10px 25px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.upload-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.upload-btn:hover {
+    background: #6366f1;
+}
