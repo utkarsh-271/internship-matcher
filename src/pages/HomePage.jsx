@@ -10,12 +10,15 @@ export default function HomePage() {
 
   const handleLogin = (method) => {
     console.log('Logged in via:', method);
-    navigate('/personality-test');  // Redirect to personality test
+    // CHANGE: Navigate to the new role selection page
+    navigate('/select-role');
   };
 
   const handleSignup = (data) => {
     console.log('Account created:', data);
     setShowSignup(false);
+    // CHANGE: Also navigate to role selection after signing up
+    navigate('/select-role');
   };
 
   return (

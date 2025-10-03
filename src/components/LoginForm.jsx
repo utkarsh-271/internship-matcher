@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import GoogleIcon from './GoogleIcon.jsx'; // Corrected path/extension
-import AppleIcon from './AppleIcon.jsx'; // Corrected path/extension
-import translations from '../translation.js'; // Corrected path/extension to go up to src/
+import GoogleIcon from './GoogleIcon.jsx';
+import AppleIcon from './AppleIcon.jsx';
+import translations from '../translation.js';
 
 const LoginForm = ({ onLogin, onShowSignup, T }) => {
     const [email, setEmail] = useState("");
@@ -14,6 +14,7 @@ const LoginForm = ({ onLogin, onShowSignup, T }) => {
 
     return (
         <div className="login-card">
+            {/* The title is now back to "Welcome Back!" */}
             <h2 className="login-title">{T('welcome_back')}</h2>
             <form onSubmit={handleSubmit} className="login-form">
                 <input
